@@ -8,7 +8,7 @@ module.exports = {
         filename: './app.js'
     },
     devServer: {
-        port: 8080,
+        port: 80,
         contentBase: './public',
     },
     resolve: {
@@ -26,8 +26,14 @@ module.exports = {
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
-                presets: ['es2015', 'react'],
-                plugins: ['transform-object-rest-spread']
+                presets: ['es2017-node7', 'react'],
+                plugins: [
+                    'transform-object-rest-spread',
+                    "syntax-async-functions",
+                    "transform-async-to-generator",
+                    "transform-regenerator",
+                    "transform-runtime"
+                ]
             }
         }, {
             test: /\.css$/,
