@@ -38,3 +38,16 @@
 .glyphicon {
     cursor: pointer;
 }
+.btn:focus, .btn:hover {
+    color: cyan;
+}
+
+.d-tfg {
+    display: table-footer-group;
+}
+
+.d-tfg > tr {
+    line-height: 25px;
+    min-height: 25px;
+    height: 25px;
+}
