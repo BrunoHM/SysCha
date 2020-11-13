@@ -5,14 +5,14 @@ import {Button, ButtonGroup, Container, Col, Dropdown} from 'react-bootstrap'
 import './menu.css'
 
 export default props => (
-    <Container fluid>
+    <Container fluid className='border-bottom border-info'>
         <Col className='col-3 p-0 m-0'>
             <Button variant='dark' className='col-3' href='#/index'>
                 Início
             </Button>
-            <Dropdown as={ButtonGroup} className='col-1 p-0 m-0'>
+            <Dropdown as={ButtonGroup} className='col-2 p-0 m-0 d-inline-block'>
                 <Dropdown.Toggle variant='dark' id='dropdown-custom-1'>
-                    {<span className='glyphicon glyphicon-align-justify' aria-hidden='true'></span>}
+                    {<span className='glyphicon glyphicon-menu-hamburger' aria-hidden='true'></span>}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                     <Dropdown.Item href='#/pessoas'>Pessoas</Dropdown.Item>
